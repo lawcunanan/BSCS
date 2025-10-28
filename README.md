@@ -10,7 +10,7 @@ The School Information System is a comprehensive platform that helps in managing
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+     https://github.com/lawcunanan/BSCS.git
     ```
 2.  **Move the project to your web server's root directory.**
     For XAMPP, it's `htdocs`.
