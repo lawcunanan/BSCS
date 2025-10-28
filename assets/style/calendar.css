@@ -1,0 +1,248 @@
+/* Updated Header Styles */
+.search-icon {
+	top: 50%;
+}
+.search-container {
+	position: relative;
+}
+
+.search-icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	color: #6c757d;
+	pointer-events: none;
+}
+
+.search-input {
+	padding-right: 30px;
+	transition: width 0.3s ease;
+	width: 200px;
+}
+
+.search-input:focus {
+	width: 300px;
+}
+
+.section-title {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1e293b;
+	margin-bottom: 15px;
+}
+
+/* Base layout styles */
+.container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+	padding: 20px;
+	max-width: 100% !important;
+}
+
+.calendar-card {
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	height: calc(100vh - 140px);
+	overflow-y: auto;
+	min-height: 500px; 
+	font-size: 14px;
+
+	
+}
+
+.calendar-card .fc-content{
+	padding: 5px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: 1s;
+}
+.calendar-card .fc-content:hover{
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);  
+   background-color: #e0f2fe;
+   color:black;
+}
+
+
+.events-card {
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	height: calc(100vh - 140px);
+	overflow-y: auto;
+	height: 280px; 
+	
+}
+
+.calendar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+
+.fc-header-toolbar {
+	padding: 10px 15px;
+	margin-bottom: 15px !important;
+	font-size: 12px;
+}
+.fc-toolbar h2 {
+	font-size: 15px !important;
+	font-weight: 600;
+	color: #1e293b;
+	padding: 0;
+	line-height: 1.5;
+}
+
+.upcoming-events-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding: 0 5px; 
+
+}
+
+.upcoming-events-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	
+}
+
+.event-card {
+	background: #f8fafc;
+	border-radius: 8px;
+	padding: 15px;
+	border-left: 4px solid #0284c7;
+	transition: transform 0.2s ease;
+	font-size: 14px;
+}
+
+.event-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Event types styling */
+.event-card.School-wide {
+	border-left: 4px solid #dc3545;
+}
+
+.event-card.Division-wide {
+	border-left: 4px solid #198754;
+	
+}
+
+.event-type-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 12px;
+	font-size: 13px;
+	margin-bottom: 8px;
+	color: white;
+	
+	
+}
+
+.event-type-badge.School-wide {
+	background-color: #dc3545;
+}
+
+.event-type-badge.Division-wide {
+	background-color: #198754;
+}
+
+.popover.School-wide{
+  border: 1px solid #dc3545;
+}
+.popover.Division-wide{
+  border: 1px solid #198754;
+	
+}
+
+
+.popover-header{
+	background-color: #ffffff;;
+	font-size: 14px;
+	padding: 10x;
+	font-weight: 700;
+	background-color: #0284c7;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.popover.School-wide .popover-header{
+   background-color: #dc3545; 
+}
+
+.popover.Division-wide .popover-header{
+   background-color: #198754;
+}
+
+
+.popover-body p{
+	padding: 0;
+	margin-bottom: 10px;
+}
+.popover-body{
+	background-color: #ffffff;;
+	padding: 10x;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom Scrollbar Styles */
+.calendar-card::-webkit-scrollbar,
+.events-card::-webkit-scrollbar,
+.pending-events::-webkit-scrollbar {
+	width: 4px; 
+}
+
+.calendar-card::-webkit-scrollbar-track,
+.events-card::-webkit-scrollbar-track,
+.pending-events::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.calendar-card::-webkit-scrollbar-thumb,
+.events-card::-webkit-scrollbar-thumb,
+.pending-events::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.05); 
+	border-radius: 2px;
+}
+
+.calendar-card::-webkit-scrollbar-thumb:hover,
+.events-card::-webkit-scrollbar-thumb:hover,
+.pending-events::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.1); /
+}
+
+
+.calendar-card,
+.events-card,
+.pending-events {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.05) transparent;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		grid-template-columns: 1fr; 
+	}
+}

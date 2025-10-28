@@ -1,0 +1,43 @@
+.form-section {
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #e5e7eb;
+}
+
+.section-header i {
+	color: #0284c7;
+	margin-right: 10px;
+	font-size: 1.2em;
+}
+
+.section-title {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #1f2937;
+	margin: 0;
+}
+
+/* Form Grid Layout */
+.form-row {
+	display: grid;
+	grid-gap: 15px;
+	margin-bottom: 15px;
+}
+
+.form-row-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.form-row-2 {
+	grid-template-columns: repeat(2, 1fr);
+}

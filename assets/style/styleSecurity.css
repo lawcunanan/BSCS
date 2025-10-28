@@ -1,0 +1,274 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main {
+	height: 100vh;
+	width: 1536px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	font-size: 30px;
+	color: #131313;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.timer {
+	text-align: center;
+}
+.navBarcon {
+	height: 70px;
+	width: 100%;
+	padding: 20px 50px 20px 50px;
+}
+.navBarcon ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.lrCon {
+	height: 730px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 50px 50px 50px 50px;
+	gap: 50px;
+}
+
+.leftCon {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	gap: 70px;
+}
+
+.logo-container {
+	height: 270px;
+	width: 43%;
+
+	border-radius: 50%;
+}
+
+.logo-container img {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+}
+
+.leftCon h1 {
+	font-size: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rightCon {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 70px 60px 70px;
+}
+
+.rightCon form,
+.verifyForm {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 40px 40px 40px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.verifyForm form {
+	box-shadow: none;
+	padding: 0;
+}
+.rightCon form .back {
+	text-decoration: none;
+	font-size: 13px;
+	color: #42b4ee;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.rightCon form .back i {
+	font-size: 20px;
+	transition: 0.3s;
+}
+.group:hover .back i {
+	color: #c80b0e;
+}
+.rightCon form p {
+	padding: 0;
+	margin-bottom: 20px;
+	color: #131313;
+	font-size: 13px;
+}
+
+.rightCon form section {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.rightCon form label {
+	color: #131313;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.rightCon form .field {
+	font-size: 14px;
+	width: 100%;
+	padding: 10px 14px;
+	border: 1px solid #131313;
+	background: none;
+
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.rightCon form #btnSignin,
+.rightCon form #btnRegister,
+#btnSignup,
+#btnForget,
+#btnVerify {
+	background-color: #42b4ee;
+	transition: 1s;
+	border: 1px solid #0d6efd;
+	color: #ffffff;
+}
+
+.rightCon form #btnSignin:hover,
+.rightCon form #btnRegister:hover,
+#btnSignup:hover,
+#btnForget:hover,
+#btnVerify:hover {
+	background-color: #0369a1;
+}
+
+.rightCon form .forget {
+	font-size: 13px;
+	text-decoration: none;
+	color: #c80b0e;
+	text-align: right;
+	transition: 0.3s;
+}
+
+.rightCon form .switch {
+	font-size: 13px;
+	color: #c4c4c4;
+	text-align: center;
+	margin: 0;
+}
+
+.rightCon form .change {
+	margin: 0;
+}
+
+.rightCon form .switch a,
+.rightCon form .change a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #c80b0e;
+	transition: 0.3s;
+}
+
+.rightCon form .change a {
+	text-align: left;
+}
+
+.rightCon form .switch a:hover,
+.rightCon form .forget:hover,
+.rightCon form .change a:hover,
+.resendForm button:hover {
+	color: #0369a1;
+}
+
+/*  */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.fieldgrid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 10px;
+	text-align: center;
+}
+
+.fieldgrid input {
+	text-align: center;
+}
+
+.resendForm {
+	display: flex;
+	gap: 10px;
+	font-size: 13px;
+	color: #131313;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.resendForm button {
+	border: none;
+	background: none;
+	height: auto;
+	color: #c80b0e;
+	cursor: pointer;
+}
+
+.alert {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	z-index: 1050;
+	font-size: 13px;
+}
+
+.alert strong {
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	border-bottom: 3px solid #c80b0e;
+}
+
+option {
+	color: #131736;
+}
+
+.btn-success {
+	font-size: 14px;
+	background-color: #51cd93;
+}
